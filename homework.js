@@ -44,3 +44,22 @@ buyHamster(myHamster) {this.hamsters.push(myHamster); this.mood= this.mood+10;  
         for (let i=10;i<=15;i++){myPerson.ageUp();}
         for (let i=0;i<2;i++){myPerson.eat();}
         for (let i=0;i<2;i++){myPerson.exercise();}
+        class Dinner {
+            constructor(appetizer,entree,dessert){
+                this.appetizer=appetizer;
+            this.entree=entree;
+            this.dessert=dessert;
+            }
+            
+        }
+        
+        class Chef {
+            newDinner (appetizer,entree,dessert){return new Dinner(appetizer,entree,dessert);}
+            
+        }
+        const myChef= new Chef();
+        
+            console.log(   myChef.newDinner("apple", "egg", "milk"));
+            console.log(   myChef.newDinner("pork", "solt", "woter"));
+            console.log(   myChef.newDinner("beef", "pepper", "potato"));
+          
