@@ -35,3 +35,12 @@ ageUp(){this.age++; this.height++; this.weight++; this.mood--;  this.bankAccoun=
 buyHamster(myHamster) {this.hamsters.push(myHamster); this.mood= this.mood+10;  this.bankAccount= this.bankAccount-myHamster.getPrice();}
         }
        
+        const myPerson= new Person("Timmy",5);
+   
+        for (let i=0;i<5;i++){myPerson.eat();}
+        for (let i=0;i<5;i++){myPerson.exercise();}
+        for (let i=6;i<=9;i++){myPerson.ageUp();}
+        myPerson.buyHamster(myHamster);
+        for (let i=10;i<=15;i++){myPerson.ageUp();}
+        for (let i=0;i<2;i++){myPerson.eat();}
+        for (let i=0;i<2;i++){myPerson.exercise();}
